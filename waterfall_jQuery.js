@@ -33,7 +33,7 @@ function check(){
     var documentH=$(window).height();
     return (lastBoxDis < scroll + documentH);
 }
-function scroll(){
+window.onload=function(){
     changePosition();
     //监听滚动事件
     $(window).scroll(function(){
@@ -46,5 +46,4 @@ function scroll(){
             changePosition();
         }
     })
-}
-scroll();
+};
